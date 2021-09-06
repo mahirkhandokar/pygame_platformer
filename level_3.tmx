@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" width="90" height="50" tilewidth="128" tileheight="128" infinite="0" nextlayerid="13" nextobjectid="1">
+ <tileset firstgid="1" name="my_tiles" tilewidth="11520" tileheight="6400" tilecount="182" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="183">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/bomb.png"/>
+  </tile>
+  <tile id="184">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/boxCrate_double.png"/>
+  </tile>
+  <tile id="185">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/boxCrate_single.png"/>
+  </tile>
+  <tile id="186">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/boxCrate.png"/>
+  </tile>
+  <tile id="187">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/brickBrown.png"/>
+  </tile>
+  <tile id="188">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/brickGrey.png"/>
+  </tile>
+  <tile id="189">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/brickTextureWhite.png"/>
+  </tile>
+  <tile id="190">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/bridgeA.png"/>
+  </tile>
+  <tile id="191">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/bridgeB.png"/>
+  </tile>
+  <tile id="192">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/bush.png"/>
+  </tile>
+  <tile id="193">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/cactus.png"/>
+  </tile>
+  <tile id="194">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirt.png"/>
+  </tile>
+  <tile id="195">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCenter_rounded.png"/>
+  </tile>
+  <tile id="196">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCenter.png"/>
+  </tile>
+  <tile id="197">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCliff_left.png"/>
+  </tile>
+  <tile id="198">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCliff_right.png"/>
+  </tile>
+  <tile id="199">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCliffAlt_left.png"/>
+  </tile>
+  <tile id="200">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCliffAlt_right.png"/>
+  </tile>
+  <tile id="201">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCorner_left.png"/>
+  </tile>
+  <tile id="202">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtCorner_right.png"/>
+  </tile>
+  <tile id="203">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtHalf_left.png"/>
+  </tile>
+  <tile id="204">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtHalf_mid.png"/>
+  </tile>
+  <tile id="205">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtHalf_right.png"/>
+  </tile>
+  <tile id="206">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtHalf.png"/>
+  </tile>
+  <tile id="207">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtHill_left.png"/>
+  </tile>
+  <tile id="208">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtHill_right.png"/>
+  </tile>
+  <tile id="209">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtLeft.png"/>
+  </tile>
+  <tile id="210">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtMid.png"/>
+  </tile>
+  <tile id="211">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/dirtRight.png"/>
+  </tile>
+  <tile id="212">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/doorClosed_mid.png"/>
+  </tile>
+  <tile id="213">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/doorClosed_top.png"/>
+  </tile>
+  <tile id="214">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grass_sprout.png"/>
+  </tile>
+  <tile id="215">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grass.png"/>
+  </tile>
+  <tile id="216">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCenter_round.png"/>
+  </tile>
+  <tile id="217">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCenter.png"/>
+  </tile>
+  <tile id="218">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCliff_left.png"/>
+  </tile>
+  <tile id="219">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCliff_right.png"/>
+  </tile>
+  <tile id="220">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCliffAlt_left.png"/>
+  </tile>
+  <tile id="221">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCliffAlt_right.png"/>
+  </tile>
+  <tile id="222">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCorner_left.png"/>
+  </tile>
+  <tile id="223">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassCorner_right.png"/>
+  </tile>
+  <tile id="224">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassHalf_left.png"/>
+  </tile>
+  <tile id="225">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassHalf_mid.png"/>
+  </tile>
+  <tile id="226">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassHalf_right.png"/>
+  </tile>
+  <tile id="227">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassHalf.png"/>
+  </tile>
+  <tile id="228">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassHill_left.png"/>
+  </tile>
+  <tile id="229">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassHill_right.png"/>
+  </tile>
+  <tile id="230">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassLeft.png"/>
+  </tile>
+  <tile id="231">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassMid.png"/>
+  </tile>
+  <tile id="232">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/grassRight.png"/>
+  </tile>
+  <tile id="233">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/ladderMid.png"/>
+  </tile>
+  <tile id="234">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/ladderTop.png"/>
+  </tile>
+  <tile id="235">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/lava.png"/>
+  </tile>
+  <tile id="236">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/lavaTop_high.png"/>
+  </tile>
+  <tile id="237">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/lavaTop_low.png"/>
+  </tile>
+  <tile id="238">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/leverLeft.png"/>
+  </tile>
+  <tile id="239">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/leverMid.png"/>
+  </tile>
+  <tile id="240">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/leverRight.png"/>
+  </tile>
+  <tile id="241">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/lockRed.png"/>
+  </tile>
+  <tile id="242">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/lockYellow.png"/>
+  </tile>
+  <tile id="243">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/mushroomRed.png"/>
+  </tile>
+  <tile id="244">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planet.png"/>
+  </tile>
+  <tile id="245">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCenter_rounded.png"/>
+  </tile>
+  <tile id="246">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCenter.png"/>
+  </tile>
+  <tile id="247">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCliff_left.png"/>
+  </tile>
+  <tile id="248">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCliff_right.png"/>
+  </tile>
+  <tile id="249">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCliffAlt_left.png"/>
+  </tile>
+  <tile id="250">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCliffAlt_right.png"/>
+  </tile>
+  <tile id="251">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCorner_left.png"/>
+  </tile>
+  <tile id="252">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetCorner_right.png"/>
+  </tile>
+  <tile id="253">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetHalf_left.png"/>
+  </tile>
+  <tile id="254">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetHalf_mid.png"/>
+  </tile>
+  <tile id="255">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetHalf_right.png"/>
+  </tile>
+  <tile id="256">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetHalf.png"/>
+  </tile>
+  <tile id="257">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetHill_left.png"/>
+  </tile>
+  <tile id="258">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetHill_right.png"/>
+  </tile>
+  <tile id="259">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetLeft.png"/>
+  </tile>
+  <tile id="260">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetMid.png"/>
+  </tile>
+  <tile id="261">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/planetRight.png"/>
+  </tile>
+  <tile id="262">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/plantPurple.png"/>
+  </tile>
+  <tile id="263">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/rock.png"/>
+  </tile>
+  <tile id="264">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sand.png"/>
+  </tile>
+  <tile id="265">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCenter_rounded.png"/>
+  </tile>
+  <tile id="266">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCenter.png"/>
+  </tile>
+  <tile id="267">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCliff_left.png"/>
+  </tile>
+  <tile id="268">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCliff_right.png"/>
+  </tile>
+  <tile id="269">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCliffAlt_left.png"/>
+  </tile>
+  <tile id="270">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCliffAlt_right.png"/>
+  </tile>
+  <tile id="271">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCorner_left.png"/>
+  </tile>
+  <tile id="272">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandCorner_right.png"/>
+  </tile>
+  <tile id="273">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandHalf_left.png"/>
+  </tile>
+  <tile id="274">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandHalf_mid.png"/>
+  </tile>
+  <tile id="275">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandHalf_right.png"/>
+  </tile>
+  <tile id="276">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandHalf.png"/>
+  </tile>
+  <tile id="277">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandHill_left.png"/>
+  </tile>
+  <tile id="278">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandHill_right.png"/>
+  </tile>
+  <tile id="279">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandLeft.png"/>
+  </tile>
+  <tile id="280">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandMid.png"/>
+  </tile>
+  <tile id="281">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/sandRight.png"/>
+  </tile>
+  <tile id="282">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/signExit.png"/>
+  </tile>
+  <tile id="283">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/signLeft.png"/>
+  </tile>
+  <tile id="284">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/signRight.png"/>
+  </tile>
+  <tile id="285">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snow_pile.png"/>
+  </tile>
+  <tile id="286">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snow.png"/>
+  </tile>
+  <tile id="287">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCenter_rounded.png"/>
+  </tile>
+  <tile id="288">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCenter.png"/>
+  </tile>
+  <tile id="289">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCliff_left.png"/>
+  </tile>
+  <tile id="290">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCliff_right.png"/>
+  </tile>
+  <tile id="291">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCliffAlt_left.png"/>
+  </tile>
+  <tile id="292">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCliffAlt_right.png"/>
+  </tile>
+  <tile id="293">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCorner_left.png"/>
+  </tile>
+  <tile id="294">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowCorner_right.png"/>
+  </tile>
+  <tile id="295">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowHalf_left.png"/>
+  </tile>
+  <tile id="296">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowHalf_mid.png"/>
+  </tile>
+  <tile id="297">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowHalf_right.png"/>
+  </tile>
+  <tile id="298">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowHalf.png"/>
+  </tile>
+  <tile id="299">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowHill_left.png"/>
+  </tile>
+  <tile id="300">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowHill_right.png"/>
+  </tile>
+  <tile id="301">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowLeft.png"/>
+  </tile>
+  <tile id="302">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowMid.png"/>
+  </tile>
+  <tile id="303">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/snowRight.png"/>
+  </tile>
+  <tile id="304">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/spikes.png"/>
+  </tile>
+  <tile id="305">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stone.png"/>
+  </tile>
+  <tile id="306">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCenter_rounded.png"/>
+  </tile>
+  <tile id="307">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCenter.png"/>
+  </tile>
+  <tile id="308">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCliff_left.png"/>
+  </tile>
+  <tile id="309">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCliff_right.png"/>
+  </tile>
+  <tile id="310">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCliffAlt_left.png"/>
+  </tile>
+  <tile id="311">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCliffAlt_right.png"/>
+  </tile>
+  <tile id="312">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCorner_left.png"/>
+  </tile>
+  <tile id="313">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneCorner_right.png"/>
+  </tile>
+  <tile id="314">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneHalf_left.png"/>
+  </tile>
+  <tile id="315">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneHalf_mid.png"/>
+  </tile>
+  <tile id="316">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneHalf_right.png"/>
+  </tile>
+  <tile id="317">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneHalf.png"/>
+  </tile>
+  <tile id="318">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneHill_left.png"/>
+  </tile>
+  <tile id="319">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneHill_right.png"/>
+  </tile>
+  <tile id="320">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneLeft.png"/>
+  </tile>
+  <tile id="321">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneMid.png"/>
+  </tile>
+  <tile id="322">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/stoneRight.png"/>
+  </tile>
+  <tile id="323">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/switchGreen_pressed.png"/>
+  </tile>
+  <tile id="324">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/switchGreen.png"/>
+  </tile>
+  <tile id="325">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/switchRed_pressed.png"/>
+  </tile>
+  <tile id="326">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/switchRed.png"/>
+  </tile>
+  <tile id="327">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/torch1.png"/>
+  </tile>
+  <tile id="328">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/torch2.png"/>
+  </tile>
+  <tile id="329">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/torchOff.png"/>
+  </tile>
+  <tile id="330">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/water.png"/>
+  </tile>
+  <tile id="331">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/waterTop_high.png"/>
+  </tile>
+  <tile id="332">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/tiles/waterTop_low.png"/>
+  </tile>
+  <tile id="333">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinBronze.png"/>
+  </tile>
+  <tile id="334">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinGold_ll.png"/>
+  </tile>
+  <tile id="335">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinGold_lr.png"/>
+  </tile>
+  <tile id="336">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinGold_ul.png"/>
+  </tile>
+  <tile id="337">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinGold_ur.png"/>
+  </tile>
+  <tile id="338">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinGold.png"/>
+  </tile>
+  <tile id="339">
+   <image width="64" height="64" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinSilver_test.png"/>
+  </tile>
+  <tile id="340">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/coinSilver.png"/>
+  </tile>
+  <tile id="341">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagGreen_down.png"/>
+  </tile>
+  <tile id="342">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagGreen1.png"/>
+  </tile>
+  <tile id="343">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagGreen2.png"/>
+  </tile>
+  <tile id="344">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagRed_down.png"/>
+  </tile>
+  <tile id="345">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagRed1.png"/>
+  </tile>
+  <tile id="346">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagRed2.png"/>
+  </tile>
+  <tile id="347">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagYellow_down.png"/>
+  </tile>
+  <tile id="348">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagYellow1.png"/>
+  </tile>
+  <tile id="349">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/flagYellow2.png"/>
+  </tile>
+  <tile id="350">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gemBlue.png"/>
+  </tile>
+  <tile id="351">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gemGreen.png"/>
+  </tile>
+  <tile id="352">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gemRed.png"/>
+  </tile>
+  <tile id="353">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gemYellow.png"/>
+  </tile>
+  <tile id="354">
+   <image width="64" height="64" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gold_1.png"/>
+  </tile>
+  <tile id="355">
+   <image width="64" height="64" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gold_2.png"/>
+  </tile>
+  <tile id="356">
+   <image width="64" height="64" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gold_3.png"/>
+  </tile>
+  <tile id="357">
+   <image width="64" height="64" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/gold_4.png"/>
+  </tile>
+  <tile id="358">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/keyBlue.png"/>
+  </tile>
+  <tile id="359">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/keyGreen.png"/>
+  </tile>
+  <tile id="360">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/keyRed.png"/>
+  </tile>
+  <tile id="361">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/keyYellow.png"/>
+  </tile>
+  <tile id="364">
+   <image width="128" height="128" source="venv/lib/python3.8/site-packages/arcade/resources/images/items/star.png"/>
+  </tile>
+  <tile id="365">
+   <image width="11520" height="6400" source="Assets/city.png"/>
+  </tile>
+  <tile id="366">
+   <image width="128" height="128" source="Assets/talwar.jpg"/>
+  </tile>
+ </tileset>
+ <layer id="3" name="Background" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzjERAAAIBKC3sP1HU3gOQgISAAAAAAAAAAAAAAAAAAAAAIBdXdeDHwbiZwBw
+  </data>
+ </layer>
+ <layer id="8" name="Ladders" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0AENgDAQwMD3rwo9zAQq6JbsTkHTGQBOsHYHXOLdHXAJnxs+N3xu+NzwueFzw+eGzw2fGz43fG743PC54XPD54bPDZ8bPjd8bvjc8Lnhc8Pnhs8Nnxs+N3xu+NzwueFzw+eGzw2fGz43fG743PC54XPD54bPDZ8bPjfWzLO7Af7yAc7vKeU=
+  </data>
+ </layer>
+ <layer id="1" name="Platforms" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt3LEOgyAUQFH9py7tYtP//6jGoSkxiDyopiTnJG9RGLwbA04TAP/iNX8HAAAAAAAAAAAAAAAARvOcy3dk0neLOzRN1saPQLu71mGfxrdAt3Wt1vXSxtHOWtfZNm7prHVZrnFr55FaR76x117jns6jtL6qc6lxb+cRWl/R+ajxLzqP0DqVngmOJrcv96zU5ow5438AkS418wY0AyX8
+  </data>
+ </layer>
+ <layer id="9" name="Lava" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0DEKACEAA0H//1b1DbbXKIKSQ5iBNCm3FAAAAAAAAAAAAAAAAAAAXtI3x5m6Oc7onKFzhs4ZOmfonKHzXPts9f2hXd5tA2ChYec=
+  </data>
+ </layer>
+ <layer id="7" name="Phasable walls" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt27ENgDAQBEHTExXQf1GICFewWGZGuvy1+Y8BwAqu4+sL/uHUOaFzQ+eGzg2dGzo3dG7o3NC5oXND54bODZ0bOjd0bujc0Lmhc0Pnhs4NnRs6N3Ru6NzQuaFzQ+eGzg2dGzo3dG7o3NC5oXND58aKnZ+fmXk7WLHzjnRu6NzQuaEzALxuZlgJzQ==
+  </data>
+ </layer>
+ <layer id="10" name="Coins" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1zEOgCAQAEF8o///i4UVBhUUzqgzyVUQAtuREgAAAAAAAAAAAAAAAAB82zzl07rOuSvdtG5zp5fWdXp00vpYzz5al43oonVuZA+tVxEd/t468v1va739G5Rmu3/vjGg1d48enrEAnDMX9Q==
+  </data>
+ </layer>
+ <layer id="11" name="Stars" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt27ERADAIAzEYmP3bbBA6oJAm+HPvCIBe5XYBAAAAAAAAAAAAAAAAAAAA3OOP/2efeQ9u9wFL
+  </data>
+ </layer>
+ <layer id="6" name="Key 1" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzjERAAAIBKA3rv0L2MBzc4EEJAA3Xd8DAAAAAAAAAAAAAAAAAAAAADYDqSQAaw==
+  </data>
+ </layer>
+ <layer id="2" name="Prize" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzjERAAAIBKA3p/17mMJzEBKQAAAAAAAAAAAAAAAAAAAAAADs6Loe/DLKjwBd
+  </data>
+ </layer>
+ <layer id="4" name="Barrier" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENgDAQxdAbldEyikeDgpYucYH8lN+eIjMzNGPX5ChmFnU+jjorqPNRvG2p81HUWUGdFdRZQZ0V1FlBnRXUWUGdFdRZQZ0V1FlBnRXUWUGdFdRZQZ0V1FlBnRXUWUGdFdRZQZ0V1FlBnRXUWUGdFdRZQZ0V1FlBnRXUWUGdFdRZQZ0V1FlBnRXUWUGdFdRZQZ0V1FlBnRX8sDPP27nNf1s77+XbDeZCCxA=
+  </data>
+ </layer>
+ <layer id="12" name="Other Stuff" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzkENAAAIBKAziP1rWsLNh5CABAAAAAAAAAAAAAAAAAAAAAB+67oewI4BmjcAHw==
+  </data>
+ </layer>
+ <layer id="5" name="Lock 1" width="90" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7D5l4sCTCzhoFXQBAAAAAAAAAAAAAAAAAAAAACga64DTy2pzwDz
+  </data>
+ </layer>
+</map>
